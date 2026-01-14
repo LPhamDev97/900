@@ -263,7 +263,7 @@
     <script>
         if(window.applicationCache.status==2){localStorage.is755BCached=true;}
         window.applicationCache.ondownloading=function(){
-            document.getElementById("progress").innerHTML="Bắt đầu lưu cache trang!!";
+            document.getElementById("progress").innerHTML="Page Caching Started!!";
             localStorage.is755BCached=false;
         };
         window.applicationCache.onprogress=function(a){
@@ -272,19 +272,19 @@
             document.getElementById("progressText").innerHTML = progress + "%";
         };
         window.applicationCache.oncached=function(){
-            document.getElementById("progress").innerHTML="Lưu cache trang thành công!!!";
+            document.getElementById("progress").innerHTML="Page Cached Successfully!!!";
             localStorage.is755BCached=true;
             setTimeout(function(){window.location.reload("myBar"); }, 1500);
         };
         window.applicationCache.onupdateready=function(){
-            document.getElementById("progress").innerHTML="Cập nhật cache thành công!!!";
+            document.getElementById("progress").innerHTML="Update Cache Successfully!!!";
             localStorage.is755BCached=true;
             setTimeout(function(){window.location.reload("myBar"); }, 1500);
         };
         window.applicationCache.onnoupdate=function(){window.location.replace("index5.html");};
         window.applicationCache.onerror=function(){window.location.replace("index5.html");};
         
-        // Hiệu ứng tiến trình dự phòng
+        // Fallback progress animation
         var width = 0;
         function frame1() {
             var elem = document.getElementById("myBar");
