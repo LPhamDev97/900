@@ -25,7 +25,7 @@ function load_exploit(){
  document.getElementById('notify').className = 'notification'
  setTimeout(function(){
   document.getElementById('log').innerHTML =
-  '<h1 style=color:#c5c7ff>Đang khai thác jailbreak... Đợi tí !!!</h1>';
+  '<h1 style=color:#c5c7ff>Đang khai thác jailbreak...</h1>';
  }, 50); 
 }
 
