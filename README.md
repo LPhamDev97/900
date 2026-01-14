@@ -120,8 +120,7 @@ Dự án mang đến giao diện mới hoàn toàn so với PSFree exploit gốc
 
 ## 🔗 Credits
 
-- Tác giả: BlackArch
-- Telegram: PlayStation Pulse
+- Tác giả: Lâm Phạm
 - Nền tảng: PSFree exploit gốc
 
 ---
@@ -130,3 +129,4 @@ Dự án mang đến giao diện mới hoàn toàn so với PSFree exploit gốc
 
 Phần mềm chỉ phục vụ mục đích nghiên cứu và giáo dục.
 Người dùng tự chịu trách nhiệm khi sử dụng.
+
