@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Công Cụ Kích Hack PS4 Phiên Bản 7.xx-9.xx</title>
+    <title>Công Cụ Kích Hack PS4 Phiên Bản 7.xx - 9.xx</title>
     <style>
         * {
             margin: 0;
@@ -159,8 +159,6 @@
             line-height: 1.4;
         }
         
-
-        
         .controls-section {
             max-width: 800px;
             width: 100%;
@@ -295,16 +293,20 @@
             }
         }
 </style>
+
 <script>
-        if (window.applicationCache.status=='0') {
+    if (window.applicationCache.status=='0') {
         window.location.replace("version-selector.html");
     }
 </script>
+
 <script defer src="payloads.js"></script>
 <script defer src="loader.js"></script>
-    <script type="module" src="alert.js"></script>
+<script type="module" src="alert.js"></script>
+
 </head>
 <body onload="load_exploit()">
+
     <div class="bg-decoration">
         <div class="floating-shape shape-1"></div>
         <div class="floating-shape shape-2"></div>
@@ -313,9 +315,9 @@
     
     <div class="container">
         <div class="header-section">
-            <h1 class="main-title">Công Cụ Kích Hack PS4 Phiên Bản 7.xx-9.xx</h1>
-            <p class="subtitle">Online and Offline Lapse Auto GoldHen by LPDevNX</p>
-            <p class="version-info">PSfree1.6 FW 7.xx-9.xx GoldHEN v2.4b18.7</p>
+            <h1 class="main-title">Công Cụ Kích Hack PS4 Phiên Bản 7.xx - 9.xx</h1>
+            <p class="subtitle">Công cụ tự động kích hoạt GoldHEN theo chu kỳ, hỗ trợ cả online lẫn offline, phát triển bởi LPDevNX.</p>
+            <p class="version-info">PSfree 1.6 – Hỗ trợ PS4 firmware 7.xx – 9.xx, tích hợp GoldHEN v2.4 beta 18.7</p>
             <div class="fw-display">FW - <span id="PS4fw"></span></div>
         </div>
         
@@ -323,102 +325,36 @@
             <div id="notify" class="notification">
                 <div id="log"></div>
             </div>
-            <div class="jailbreak-status" id="msgs2">Sẵn Sàng Bẻ Khoá</div>
+            <div class="jailbreak-status" id="msgs2">Sẵn sàng Jailbreak</div>
             <div style="margin-top: 0.5rem; font-size: 0.9rem; color: #7172a1;">
-                <span>Successful attempts: <span id="passCounter" style="color: #10b981;">0</span></span>
-                <span style="margin-left: 1rem;">Unsuccessful attempts: <span id="failCounter" style="color: #ef4444;">0</span></span>
+                <span>Số lần thực hiện thành công: <span id="passCounter" style="color: #10b981;">0</span></span>
+                <span style="margin-left: 1rem;">Số lần thực hiện không thành công: <span id="failCounter" style="color: #ef4444;">0</span></span>
             </div>
         </div>
         
         <div class="controls-section">
-
-
             <div class="section-title">Payloads</div>
             <div class="buttons-grid">
-                <button onclick="load_PSFreeFix()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='PSFree Fix - Fixes PS4 PSFree exploit issues'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    PSFree Fix
-                </button>
-                
-                <button onclick="load_ftp()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='FTP Server - Start FTP server for file access'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    FTP Server
-                </button>
-                
-                <button onclick="load_ps4debug()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='PS4Debug - Enable debugging features'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    PS4Debug
-                </button>
-                
-                <button onclick="load_app2usb()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='App2USB - Transfer applications to USB storage'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    App2USB
-                </button>
-                
-                <button onclick="load_backup()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='Backup - Backup system data to USB'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    Backup
-                </button>
-                
-                <button onclick="load_restore()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='Restore - Restore system data from USB'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    Restore
-                </button>
-                
-                <button onclick="load_disable_updates()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='Disable Updates - Block system updates'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    Disable Updates
-                </button>
-                
-                <button onclick="load_enable_updates()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='Enable Updates - Allow system updates'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    Enable Updates
-                </button>
-                
-                <button onclick="load_appcache_install()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='AppCache Install - Install application cache'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    AppCache Install
-                </button>
-                
-                <button onclick="load_history_blocker()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='History Blocker - Block browser history tracking'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    History Blocker
-                </button>
-                
-                <button onclick="load_pup_decrypt()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='PUP Decrypt - Decrypt PS4 update files'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    PUP Decrypt
-                </button>
-                
-                <button onclick="load_rif_renamer()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='RIF Renamer - Manage license files'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    RIF Renamer
-                </button>
-                
-                <button onclick="load_webrte()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='WebRTE - Real-time editing features'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    WebRTE
-                </button>
+                <button onclick="load_PSFreeFix()" onMouseOver="document.getElementById('msgs2').innerHTML='PSFree Fix - Khắc phục lỗi exploit PSFree trên PS4'" onmouseout="document.getElementById('msgs2').innerHTML='Sẵn sàng Jailbreak'">PSFree Fix</button>
+                <button onclick="load_ftp()" onMouseOver="document.getElementById('msgs2').innerHTML='FTP Server - Khởi động máy chủ FTP để truy cập file'" onmouseout="document.getElementById('msgs2').innerHTML='Sẵn sàng Jailbreak'">FTP Server</button>
+                <button onclick="load_ps4debug()" onMouseOver="document.getElementById('msgs2').innerHTML='PS4Debug - Kích hoạt các tính năng gỡ lỗi'" onmouseout="document.getElementById('msgs2').innerHTML='Sẵn sàng Jailbreak'">PS4Debug</button>
+                <button onclick="load_app2usb()" onMouseOver="document.getElementById('msgs2').innerHTML='App2USB - Chuyển ứng dụng sang USB'" onmouseout="document.getElementById('msgs2').innerHTML='Sẵn sàng Jailbreak'">App2USB</button>
+                <button onclick="load_backup()" onMouseOver="document.getElementById('msgs2').innerHTML='Backup - Sao lưu dữ liệu hệ thống ra USB'" onmouseout="document.getElementById('msgs2').innerHTML='Sẵn sàng Jailbreak'">Backup</button>
+                <button onclick="load_restore()" onMouseOver="document.getElementById('msgs2').innerHTML='Restore - Khôi phục dữ liệu hệ thống từ USB'" onmouseout="document.getElementById('msgs2').innerHTML='Sẵn sàng Jailbreak'">Restore</button>
+                <button onclick="load_disable_updates()" onMouseOver="document.getElementById('msgs2').innerHTML='Disable Updates - Chặn cập nhật hệ thống'" onmouseout="document.getElementById('msgs2').innerHTML='Sẵn sàng Jailbreak'">Disable Updates</button>
+                <button onclick="load_enable_updates()" onMouseOver="document.getElementById('msgs2').innerHTML='Enable Updates - Cho phép cập nhật hệ thống'" onmouseout="document.getElementById('msgs2').innerHTML='Sẵn sàng Jailbreak'">Enable Updates</button>
+                <button onclick="load_appcache_install()" onMouseOver="document.getElementById('msgs2').innerHTML='AppCache Install - Cài đặt bộ nhớ đệm ứng dụng'" onmouseout="document.getElementById('msgs2').innerHTML='Sẵn sàng Jailbreak'">AppCache Install</button>
+                <button onclick="load_history_blocker()" onMouseOver="document.getElementById('msgs2').innerHTML='History Blocker - Chặn theo dõi lịch sử trình duyệt'" onmouseout="document.getElementById('msgs2').innerHTML='Sẵn sàng Jailbreak'">History Blocker</button>
+                <button onclick="load_pup_decrypt()" onMouseOver="document.getElementById('msgs2').innerHTML='PUP Decrypt - Giải mã file cập nhật PS4 (PUP)'" onmouseout="document.getElementById('msgs2').innerHTML='Sẵn sàng Jailbreak'">PUP Decrypt</button>
+                <button onclick="load_rif_renamer()" onMouseOver="document.getElementById('msgs2').innerHTML='RIF Renamer - Quản lý file bản quyền (RIF)'" onmouseout="document.getElementById('msgs2').innerHTML='Sẵn sàng Jailbreak'">RIF Renamer</button>
+                <button onclick="load_webrte()" onMouseOver="document.getElementById('msgs2').innerHTML='WebRTE - Chỉnh sửa dữ liệu theo thời gian thực'" onmouseout="document.getElementById('msgs2').innerHTML='Sẵn sàng Jailbreak'">WebRTE</button>
             </div>
         </div>
-</div>
+    </div>
     
     <div class="credits">
         <div class="credits-line">
-            <span class="credit-label">Author:</span> 
+            <span class="credit-label">Tác giả:</span> 
             <a href="https://t.me/sudoLâm Phạm" class="telegram-link">Lâm Phạm</a>
             <span style="margin: 0 1rem;">•</span>
             <span class="credit-label">Telegram:</span> 
@@ -427,22 +363,22 @@
     </div>
 
     <script>
-        // Firmware detection
+        // Phát hiện firmware
         UA = navigator.userAgent.substring(navigator.userAgent.indexOf("6.72 (") + 28, navigator.userAgent.indexOf(") Apple"));
-        // 7.xx
+
         if (UA == "layStation 4/7.00") UA = "7.00";
         if (UA == "layStation 4/7.01") UA = "7.01";
         if (UA == "layStation 4/7.02") UA = "7.02";
         if (UA == "layStation 4/7.50") UA = "7.50";
         if (UA == "layStation 4/7.51") UA = "7.51";
         if (UA == "layStation 4/7.55") UA = "7.55";
-        // 8.xx
+
         if (UA == "layStation 4/8.00") UA = "8.00";
         if (UA == "layStation 4/8.01") UA = "8.01";
         if (UA == "layStation 4/8.03") UA = "8.03";
         if (UA == "layStation 4/8.50") UA = "8.50";
         if (UA == "layStation 4/8.52") UA = "8.52";
-        // 9.xx
+
         if (UA == "layStation 4/9.00") UA = "9.00";
         if (UA == "layStation 4/9.03") UA = "9.03";
         if (UA == "layStation 4/9.04") UA = "9.04";
@@ -452,15 +388,14 @@
         if (UA == "layStation 4/99.99") UA = "99.99";
         
         var supportedFW = ["7.00","7.01","7.02","7.50","7.51","7.55","8.00","8.01","8.03","8.50","8.52","9.00","9.03","9.04","9.50","9.51","9.60","99.99"];
-        if (!supportedFW.includes(UA)) 
-            alert("This Is For PS4 FW 7.xx - 9.xx Only!");
+        if (!supportedFW.includes(UA))
+            alert("Công cụ này chỉ hỗ trợ PS4 Firmware 7.xx - 9.xx!");
+
         document.getElementById("PS4fw").innerHTML = "" + UA + "";
 
-        // Statistics initialization
         if (localStorage.passcount == null || localStorage.passcount == undefined) localStorage.passcount = 0;
         if (localStorage.failcount == null || localStorage.failcount == undefined) localStorage.failcount = 0;
         
-        // Update counters on page load
         if (document.getElementById("passCounter")) {
             document.getElementById("passCounter").innerHTML = localStorage.passcount;
         }
