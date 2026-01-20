@@ -54,7 +54,7 @@ function load_exploit_done(){
  document.getElementById('notify').className = 'notification'
  setTimeout(function(){
   document.getElementById('log').innerHTML =
-  '<h1 style=color:#c5c7ff>Kích Hack Thành Công !!! Đã nạp GoldHEN v2.4b18.7 !!!</h1>';
+  '<h1 style=color:#c5c7ff>KÍCH HACK THÀNH CÔNG !!! Đã nạp GoldHEN v2.4b18.7 !!!</h1>';
  }, 50); 
  setTimeout(ani2, 4000);
 }
