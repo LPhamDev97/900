@@ -25,7 +25,7 @@ function load_exploit(){
  document.getElementById('notify').className = 'notification'
  setTimeout(function(){
   document.getElementById('log').innerHTML =
-  '<h1 style=color:#c5c7ff>Đang khai thác Jailbreak...</h1>';
+  '<h1 style=color:#c5c7ff>Đang khai thác bẻ khoá...</h1>';
  }, 50); 
 }
 
@@ -54,7 +54,7 @@ function load_exploit_done(){
  document.getElementById('notify').className = 'notification'
  setTimeout(function(){
   document.getElementById('log').innerHTML =
-  '<h1 style=color:#c5c7ff>Jailbreak thành công !!! Đã nạp GoldHEN v2.4b18.5 !!!</h1>';
+  '<h1 style=color:#c5c7ff>KÍCH HACK THÀNH CÔNG !!! Đã nạp GoldHEN v2.4b18.5 !!!</h1>';
  }, 50); 
  setTimeout(ani2, 4000);
 }
